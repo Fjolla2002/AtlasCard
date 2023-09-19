@@ -5,13 +5,13 @@ import '../../style/style.scss';
 const HomeBanner = () => {
   return (
     <div className='homeBanner'>
-        <h1>{homeBannerData.banner.title}</h1>
-        <img src={homeBannerData.banner.image} alt={homeBannerData.banner.title} />
+        <h1>{homeBannerData.title}</h1>
+        <img src={homeBannerData.image} alt={homeBannerData.title} />
         <div className='container'>
             <p>
-                {homeBannerData.banner.desc} 
+                {homeBannerData.desc} 
                 <br />
-                <span>{homeBannerData.banner.span}</span>
+                <span>{homeBannerData.span}</span>
             </p>
         </div>
     </div>

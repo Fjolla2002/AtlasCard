@@ -3,3 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Sequel Sans Book'; 
+  src: url('assets/fonts/Sequel Sans Book Disp.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Sequel Sans Book', sans-serif;
+}
+
+.container {
+  width: 69%;
+  margin: 0 auto;
+}
