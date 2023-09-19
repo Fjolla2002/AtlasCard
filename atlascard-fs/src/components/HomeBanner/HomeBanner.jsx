@@ -1,6 +1,6 @@
 import React from 'react';
 import { homeBannerData } from '../../assets/data/dummydata';
-import '../../style/style.scss';
+import './homeBanner.scss';
 
 const HomeBanner = () => {
   return (

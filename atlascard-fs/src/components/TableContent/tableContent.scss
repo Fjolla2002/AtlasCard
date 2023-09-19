@@ -1,0 +1,27 @@
+.table-content {
+    table {
+      width: 100%; 
+      border-collapse: collapse;
+    }
+  
+    .table-row {
+      border-top: 1px solid #ffffff66;
+  
+      &:last-child {
+        border-bottom: 1px solid #ffffff66;
+      }
+  
+      .table-col {
+        padding: 80px 0;
+        font-size: 24px;
+        color: #ffffff66;
+  
+        &.col1 {
+          font-size: 28px;
+          color: #f7f7f2;
+          letter-spacing: 2px;
+          padding-right: 260px;
+        }
+      }
+    }
+}          

@@ -1,23 +1,23 @@
 import React from 'react';
-import { tasteMakerData } from '../../assets/data/dummydata';
-import TableContent from './TableContent';
-import '../../style/style.scss'
+import { tasteMakerData, tableContentTasteMaker } from '../../assets/data/dummydata';
+import './tasteMaker.scss'
+import TableContent from '../TableContent/TableContent';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
-const TasteMaker = () => {
+const TasteMaker = ({backColor}) => {
   return (
     <div className='tasteMaker'>
         <div className='container'>
-            <div className='top-content'>
-                <h1>{tasteMakerData.title}</h1>
-                <h3>{tasteMakerData.subTitle}</h3>
-                <p>{tasteMakerData.desc}</p>
-            </div>
+            <SectionTitle 
+                data={tasteMakerData} 
+                backColor={backColor}
+            />
             <div className='horse-image-content'>
                 <img src={tasteMakerData.images[0]} alt={tasteMakerData.imagesDesc[0]} />
                 <span>{tasteMakerData.imagesDesc[0]}</span>
             </div>
             <div className='table-container'>
-             <TableContent />
+             <TableContent data={tableContentTasteMaker.rows}/>
             </div>
             <div className='images-content'>
                 <div className='single-image'>

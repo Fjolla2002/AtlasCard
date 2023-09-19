@@ -49,6 +49,12 @@ const tasteMakerData = {
     ],
 }
 
+const highFlyerData = {
+    title: "High Flyer",
+    subTitle : "Built for (spontaneous) travel.",
+    desc: "No matter where your next grand tour takes you, Atlas is there as your co-pilot, with bespoke flight benefits for when you're ready to go on the spur of the moment.",
+}
+
 export {
-    homeBannerData, tableContentTasteMaker, tasteMakerData
+    homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData
 };
