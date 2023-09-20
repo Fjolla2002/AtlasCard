@@ -3,6 +3,7 @@ import tasteMaker1 from '../images/tastemaker1.jpg';
 import tasteMaker2 from '../images/tastemaker2.jpg';
 import tasteMaker3 from '../images/tastemaker3.jpg';
 import tasteMaker4 from '../images/tastemaker4.jpg';
+import highFlyerImage from '../images/travel-desktop.webp';
 
 const homeBannerData = {
         title: "No Limits",
@@ -53,8 +54,37 @@ const highFlyerData = {
     title: "High Flyer",
     subTitle : "Built for (spontaneous) travel.",
     desc: "No matter where your next grand tour takes you, Atlas is there as your co-pilot, with bespoke flight benefits for when you're ready to go on the spur of the moment.",
+    image: highFlyerImage,
+    imageDesc: "BESPOKE FLIGHT BENEFITS, INSIDE ATLAS APP.",
+    visa: {
+        icon: "+",
+        title: "Visa Infinite Benefits⁶",
+        desc: "Priority Pass, Luxury Hotel Collection,no foreign transaction fees, and more.",
+        btnDesc: "Discover"
+    }
 }
 
+const tableContentHighFlyer = {
+    rows: [
+        {
+            id: 1,
+            title: "5x points with BLADE³",
+            desc: "Exclusive reward for Atlas cardholders on all BLADE helicopter rides and flights."
+        },
+        {
+            id: 2,
+            title: "CLEAR Plus membership⁴",
+            desc: "Fast forward through airport security with included CLEAR Plus annual membership."
+        },
+        {
+            id: 3,
+            title: "Cancel flights without fees⁵",
+            desc: "Change or cancel any flight, at any time, for any reason and get fees reimbursed up to $600 a year."
+        },
+    ]
+}
+
+
 export {
-    homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData
+    homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, tableContentHighFlyer
 };

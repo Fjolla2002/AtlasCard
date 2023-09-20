@@ -3,23 +3,26 @@ import { tasteMakerData, tableContentTasteMaker } from '../../assets/data/dummyd
 import './tasteMaker.scss'
 import TableContent from '../TableContent/TableContent';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import ThreeImagesContainer from '../ThreeImagesContainer/ThreeImagesContainer';
 
-const TasteMaker = ({backColor}) => {
+const TasteMaker = () => {
+    const backColor = getComputedStyle(document.documentElement).getPropertyValue('--black-back').trim();
   return (
-    <div className='tasteMaker'>
+    <div id='tasteMaker'>
         <div className='container'>
-            <SectionTitle 
+            <SectionTitle
                 data={tasteMakerData} 
-                backColor={backColor}
+                backgroundColor={backColor} 
             />
             <div className='horse-image-content'>
                 <img src={tasteMakerData.images[0]} alt={tasteMakerData.imagesDesc[0]} />
                 <span>{tasteMakerData.imagesDesc[0]}</span>
             </div>
             <div className='table-container'>
-             <TableContent data={tableContentTasteMaker.rows}/>
+             <TableContent data={tableContentTasteMaker.rows} backgroundColor={backColor}/>
             </div>
-            <div className='images-content'>
+            <ThreeImagesContainer  data={tasteMakerData} backgroundColor={backColor}/>
+            {/* <div className='images-content'>
                 <div className='single-image'>
                     <img src={tasteMakerData.images[1]} alt={tasteMakerData.imagesDesc[1]} />
                     <span>{tasteMakerData.imagesDesc[1]}</span>
@@ -34,7 +37,7 @@ const TasteMaker = ({backColor}) => {
                         <span>{tasteMakerData.imagesDesc[3]}</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )

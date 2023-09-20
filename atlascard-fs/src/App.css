@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white-back: #f7f7f2;
+  --black-back: #141414;
+  
+}
+
 @font-face {
   font-family: 'Sequel Sans Book'; 
   src: url('assets/fonts/Sequel Sans Book Disp.ttf') format('truetype');

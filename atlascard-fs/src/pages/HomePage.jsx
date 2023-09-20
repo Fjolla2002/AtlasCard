@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <div>
         <HomeBanner/>
-        <TasteMaker backColor="#141414"/>
-        <HighFlyer backColor="#f7f7f2"/>
+        <TasteMaker />
+        <HighFlyer />
     </div>
   )
 }

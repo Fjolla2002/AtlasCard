@@ -1,4 +1,72 @@
-.highFlyer {
-    background-color: #f7f7f2;
-    padding: 200px 0;
+#highFlyer {
+    background-color: var(--white-back);
+    padding: 200px 0 100px 0;
+
+    .banner-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #e7cdd3;
+
+        .image-container {
+            width: 100%;
+            img {
+                padding: 100px 0;
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+        .text-container {
+            width: 100%;
+            background-color: #f7f7f2;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            font-family: 'Apercu Mono Pro Regular'; 
+            color: #00000080;
+        }
+    }
+
+    .table-container {
+        margin-top: 100px;
+    }
+
+    .visa-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+
+        span, h3 {
+            font-size: 28px;
+        }
+
+        h3 {
+            margin-bottom: 56px;
+        }
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+            color: #00000080;
+            margin-bottom: 48px;
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid #00000080;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-size: 20px;
+            color: #000;
+            font-weight: 500;
+        }
+        
+    }
 }
