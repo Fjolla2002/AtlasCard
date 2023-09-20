@@ -4,6 +4,7 @@ import TasteMaker from '../components/TasteMaker/TasteMaker'
 import HighFlyer from '../components/HighFlyer/HighFlyer'
 import HeadTurner from '../components/HeadTurner/HeadTurner'
 import PowerCouple from '../components/PowerCouple/PowerCouple'
+import TrulyPersonal from '../components/TrulyPersonal/TrulyPersonal'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <HighFlyer />
         <HeadTurner />
         <PowerCouple />
+        <TrulyPersonal />
     </div>
   )
 }

@@ -1,7 +1,6 @@
-#powerCouple {
+#trulyPersonal {
     background-color: var(--white-back);
     padding: 200px 0;
-    border-bottom: 2px solid #00000080;
 
     .banner-content {
         display: flex;
@@ -14,11 +13,12 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            background-color: #dadee6;
+            background-color: #e6e6e6;
 
             img {
-                padding-top: 50px;
-                height: 100vh;
+                padding: 100px 50px;
+                width: 100%;
+                height: auto;
                 object-fit: contain;
             }
         }
@@ -32,7 +32,26 @@
         }
     }
 
-    .table-container {
-        margin-bottom: 100px;
+    .card-image {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+
+        span {
+            padding: 10px 0;
+            font-size: 12px;
+            font-family: 'Apercu Mono Pro Regular';
+            color: #00000080; 
+        }
     }
 }

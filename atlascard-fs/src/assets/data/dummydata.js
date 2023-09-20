@@ -11,6 +11,8 @@ import powerCoupleImg from '../images/phone-in-hand-desktop.webp';
 import powerCouple1 from '../images/powerCouple1.jpg';
 import powerCouple2 from '../images/powerCouple2.jpg';
 import powerCouple3 from '../images/powerCouple3.jpg';
+import trulyPersonal1 from '../images/trulyPersonal1.jpg';
+import trulyPersonal2 from '../images/trulyPersonal2.jpg';
 
 const homeBannerData = {
         title: "No Limits",
@@ -162,7 +164,43 @@ const tableContentPowerCoupleData = {
     ]
 }
 
+const trulyPersonalData = {
+    title: "Truly Personal",
+    subTitle: "At your beck and call (or text).",
+    desc: "Experience handcrafted support, with your own dedicated personal advisor who is on hand to fulfill any request, from last-minute dinner plans to deep dive sessions.",
+    images: [
+        trulyPersonal1,
+        trulyPersonal2
+    ],
+    imagesDesc: [
+        "YOUR PERSONAL ADVISOR, NOW IN IMESSAGE.",
+        "YOUR COMPANION THROUGH EVERY ADVENTURE."
+    ]
+
+}
+
+const tableContentTrulyPersonal = {
+    rows: [
+        {
+            id: 1,
+            title: "Personal advisor",
+            desc: "Going to exceptional lengths to know your preferences and tastes, your advisor is here to provide truly personal support."
+        },
+        {
+            id: 2,
+            title: "1 on 1 sessions",
+            desc: "For those times when it takes more than a text or a phone call, your personal advisor is just a quick booking away for a video call."
+        },
+        {
+            id: 3,
+            title: "Experiences concierge¹⁰",
+            desc: "From last-minute table reservations, to sold out events, your personal advisor is on hand to help you have a lifetime experience."
+        },
+    ]
+}
+
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
-    tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData
+    tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData,
+    trulyPersonalData, tableContentTrulyPersonal
 };
