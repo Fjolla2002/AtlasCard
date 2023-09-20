@@ -199,8 +199,84 @@ const tableContentTrulyPersonal = {
     ]
 }
 
+const executiveBriefData = {
+    title: "Executive, brief.",
+    subTitle: "Your next journey begins here.",
+    desc: "With all the essentials you need out in the world, and nothing to limit your possibilities, here is everything Atlas has to offer.",
+    member: {
+        btnDesc: "Become a founding member",
+        price: "$999/yr."
+    }
+}
+
+const tableContentExecutiveBrief = {
+    tables: [
+        {
+            id: 1,
+            title: "Dining",
+            desc: [
+                "Exclusive reservations with Atlas Supper Club",
+                "Dedicated tables at partner restaurants",
+                "Last-minute bookings",
+                "Peak hours access",
+            ]
+        },
+        {
+            id: 2,
+            title: "Travel",
+            desc: [
+                "5x points with BLADE on helicopter rides and flights",
+                "CLEAR Plus membership",
+                "Cancel flights without fees",
+            ]
+        },
+        {
+            id: 3,
+            title: "Rewards & Benefits",
+            desc: [
+                "3x upgrade on top spending category",
+                "1x points on every purchase",
+                "One Medical membership¹¹",
+                "Erewhon Cafe membership¹²",
+                "FUTURE fitness training membership¹³"
+            ]
+        },
+        {
+            id: 4,
+            title: "Personal Advisor",
+            desc: [
+                "Advisor dedicated to your account",
+                "1 on 1 sessions with available video calls",
+                "Personalized dining and experiences concierge",
+            ]
+        },
+        {
+            id: 5,
+            title: "Card",
+            desc: [
+                "Charge card with no pre-set spending limits¹⁴",
+                "21 gram steel alloy, milled, engraved, and polished to a brilliant mirror shine",
+                "Tone-on-tone card back, with your personal icon, and no card number",
+                "Visa Infinite",
+                "Handle with care, clean with a microfiber cloth"
+            ]
+        },
+        {
+            id: 6,
+            title: "App",
+            desc: [
+                "True native iOS app with buttery-smooth performance",
+                "Dark Mode support",
+                "Instant purchase notifications",
+                "Unlimited virtual cards",
+                "Apple Pay"
+            ]
+        },
+    ]
+}
+
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
     tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData,
-    trulyPersonalData, tableContentTrulyPersonal
+    trulyPersonalData, tableContentTrulyPersonal, executiveBriefData, tableContentExecutiveBrief
 };

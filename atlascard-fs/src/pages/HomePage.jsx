@@ -5,6 +5,7 @@ import HighFlyer from '../components/HighFlyer/HighFlyer'
 import HeadTurner from '../components/HeadTurner/HeadTurner'
 import PowerCouple from '../components/PowerCouple/PowerCouple'
 import TrulyPersonal from '../components/TrulyPersonal/TrulyPersonal'
+import ExecutiveBrief from '../components/ExecutiveBrief/ExecutiveBrief'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <HeadTurner />
         <PowerCouple />
         <TrulyPersonal />
+        <ExecutiveBrief />
     </div>
   )
 }

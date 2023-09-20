@@ -6,6 +6,7 @@ import TravelPage from './pages/TravelPage';
 import CardPage from './pages/CardPage';
 import AppPage from './pages/AppPage';
 import ConciergePage from './pages/ConciergePage';
+import BenefitsPage from './pages/BenefitsPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/card' element={<CardPage/>}/>
           <Route path='/app' element={<AppPage/>}/>
           <Route path='/concierge' element={<ConciergePage/>}/>
+          <Route path='/benefits' element={<BenefitsPage/>}/>
       </Routes>
     </BrowserRouter>
   );
