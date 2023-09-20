@@ -1,9 +1,13 @@
 import React from 'react'
 import HeadTurner from '../components/HeadTurner/HeadTurner'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const CardPage = () => {
   return (
-    <HeadTurner />
+    <div>
+      <HeadTurner />
+      <ScrollToTop />
+    </div>
   )
 }
 

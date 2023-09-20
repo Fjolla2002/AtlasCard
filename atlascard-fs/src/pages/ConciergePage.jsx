@@ -1,9 +1,13 @@
 import React from 'react';
 import TrulyPersonal from '../components/TrulyPersonal/TrulyPersonal';
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
 const ConciergePage = () => {
   return (
-    <TrulyPersonal />
+    <div>
+      <TrulyPersonal />
+      <ScrollToTop />
+    </div>
   )
 }
 

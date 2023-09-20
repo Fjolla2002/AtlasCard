@@ -1,9 +1,13 @@
 import React from 'react'
 import HighFlyer from '../components/HighFlyer/HighFlyer'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const TravelPage = () => {
   return (
-    <HighFlyer/>
+    <div>
+      <HighFlyer/>
+      <ScrollToTop />
+    </div>
   )
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
 import ExecutiveBrief from '../components/ExecutiveBrief/ExecutiveBrief'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const BenefitsPage = () => {
   return (
-    <ExecutiveBrief />
+    <div>
+      <ExecutiveBrief />
+      <ScrollToTop />
+    </div>
   )
 }
 

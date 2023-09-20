@@ -1,0 +1,22 @@
+.scrollTop {
+    button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: none;
+        background-color: #d69fac;
+        transition: all .4s ease-in-out;
+
+        img {
+            padding: 15px;
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: #dd899c;
+        }
+    }
+}

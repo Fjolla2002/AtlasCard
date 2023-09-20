@@ -6,7 +6,7 @@ import HeadTurner from '../components/HeadTurner/HeadTurner'
 import PowerCouple from '../components/PowerCouple/PowerCouple'
 import TrulyPersonal from '../components/TrulyPersonal/TrulyPersonal'
 import ExecutiveBrief from '../components/ExecutiveBrief/ExecutiveBrief'
-import Footer from '../components/Footer/Footer'
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop'
 
 const HomePage = () => {
   return (
@@ -18,7 +18,7 @@ const HomePage = () => {
         <PowerCouple />
         <TrulyPersonal />
         <ExecutiveBrief />
-        <Footer />
+        <ScrollToTop/>
     </div>
   )
 }

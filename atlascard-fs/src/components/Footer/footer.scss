@@ -6,7 +6,6 @@
     .footer-top {
         display: flex;
         justify-content: space-between;
-        // padding-bottom: 50px;
         border-bottom: 1px solid #001391;
 
         .icons {
@@ -34,6 +33,10 @@
                 color: #001391;
                 margin: 8px 0;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

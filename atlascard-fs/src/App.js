@@ -7,6 +7,7 @@ import CardPage from './pages/CardPage';
 import AppPage from './pages/AppPage';
 import ConciergePage from './pages/ConciergePage';
 import BenefitsPage from './pages/BenefitsPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/concierge' element={<ConciergePage/>}/>
           <Route path='/benefits' element={<BenefitsPage/>}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
