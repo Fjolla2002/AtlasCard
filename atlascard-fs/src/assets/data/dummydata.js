@@ -4,6 +4,9 @@ import tasteMaker2 from '../images/tastemaker2.jpg';
 import tasteMaker3 from '../images/tastemaker3.jpg';
 import tasteMaker4 from '../images/tastemaker4.jpg';
 import highFlyerImage from '../images/travel-desktop.webp';
+import headTurnerVideo from '../videos/atlas-woman.mp4';
+import headTurner1 from '../images/headTurner1.png';
+import headTurner2 from '../images/headTurner2.png';
 
 const homeBannerData = {
         title: "No Limits",
@@ -84,7 +87,41 @@ const tableContentHighFlyer = {
     ]
 }
 
+const headTurnerData = {
+    title : "Head Turner",
+    subTitle: "Designed to shatter the norm.",
+    desc: "Atlas is crafted to mirror our uncommon obsession with every single detail, always in pursuit of elevating you above the crowd, while also enhancing your privacy.",
+    video: headTurnerVideo,
+    videoDesc: "THE WORLD IN YOUR HAND, WITH ATLAS CARD.",
+    images: [
+        headTurner1,
+        headTurner2
+    ],
+    imagesDesc: "DESIGNED AND ENGINEERED, FRONT TO BACK."
+}
+
+const tableContentHeadTurner = {
+    rows: [
+        {
+            id: 1,
+            title: "Advanced construction",
+            desc: "Made from 21 grams of high density steel, CNC-milled and engraved, then polished to a brilliant mirror finish that is unlike any card."
+        },
+        {
+            id: 2,
+            title: "Enhanced privacy",
+            desc: "With no visible card number on its surface, Atlas keeps your privacy where it belongs, in your own hands.⁷"
+        },
+        {
+            id: 3,
+            title: "Personalized for you",
+            desc: "Designed front to back, Atlas card features tone-on-tone graphics and a personal icon of your choice by your name."
+        },
+    ]
+}
+
 
 export {
-    homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, tableContentHighFlyer
+    homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
+    tableContentHighFlyer, headTurnerData, tableContentHeadTurner
 };
