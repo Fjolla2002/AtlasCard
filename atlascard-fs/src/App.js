@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import DiningPage from './pages/DiningPage';
 import TravelPage from './pages/TravelPage';
 import CardPage from './pages/CardPage';
+import AppPage from './pages/AppPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/dining' element={<DiningPage/>}/>
           <Route path='/travel' element={<TravelPage/>}/>
           <Route path='/card' element={<CardPage/>}/>
+          <Route path='/app' element={<AppPage/>}/>
       </Routes>
     </BrowserRouter>
   );

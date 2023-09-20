@@ -7,6 +7,10 @@ import highFlyerImage from '../images/travel-desktop.webp';
 import headTurnerVideo from '../videos/atlas-woman.mp4';
 import headTurner1 from '../images/headTurner1.png';
 import headTurner2 from '../images/headTurner2.png';
+import powerCoupleImg from '../images/phone-in-hand-desktop.webp';
+import powerCouple1 from '../images/powerCouple1.jpg';
+import powerCouple2 from '../images/powerCouple2.jpg';
+import powerCouple3 from '../images/powerCouple3.jpg';
 
 const homeBannerData = {
         title: "No Limits",
@@ -39,14 +43,14 @@ const tasteMakerData = {
     title: "Taste Maker",
     subTitle : "Meet Atlas Supper Club.",
     desc: "Skip past the endless waitlists and concierge calls that turn up empty handed. With Atlas, you have a seat at the table at today's most desirable restaurants.",
+    bannerImg: tasteMaker1,
+    bannerImgDesc:  "SUPPER CLUB RESERVATIONS, INSIDE ATLAS APP.",
     images: [
-        tasteMaker1,
         tasteMaker2,
         tasteMaker3,
         tasteMaker4,
     ],
     imagesDesc: [
-        "SUPPER CLUB RESERVATIONS, INSIDE ATLAS APP.",
         "HORSES, LA, ON ATLAS SUPPER CLUB.",
         "FELIX TRATTORIA, LA, ON ATLAS SUPPER CLUB.",
         "CUCINA ALBA, NYC, ON ATLAS SUPPER CLUB.",
@@ -120,8 +124,45 @@ const tableContentHeadTurner = {
     ]
 }
 
+const powerCoupleData = {
+    title: "Power Couple",
+    subTitle: "A dynamic duo of card + app.",
+    desc: "Each conceived from the same first principles, Atlas shines with a true native app that raises the bar, from magical rewards to unlimited cards, and everything in between.",
+    bannerImg: powerCoupleImg,
+    bannerImgDesc: "FAR ABOVE THE TYPICAL APP EXPERIENCE.",
+    images: [
+        powerCouple1,
+        powerCouple2,
+        powerCouple3
+    ],
+    imagesDesc: [
+        "YOUR PURCHASES, REIMAGINED AS MOMENTS.",
+        "CREATE AND MANAGE VIRTUAL CARDS.",
+        "POINTS UPGRADES, WITH DYNAMIC REWARDS."
+    ]
+}
+
+const tableContentPowerCoupleData = {
+    rows: [
+        {
+            id: 1,
+            title: "Dynamic rewards⁸",
+            desc: "Get automatically upgraded to 3x points where you spend the most, plus 1x points on every purchase. Because there's more to a rewarding life than chasing points."
+        },
+        {
+            id: 2,
+            title: "Unlimited virtual cards⁹",
+            desc: "Create a unique card for your next trip, or one to share with your assistant, or to go online shopping, or ... you get the idea."
+        },
+        {
+            id: 3,
+            title: "Intuitively powerful",
+            desc: "Buttery-smooth performance, support for features like Dark Mode, and endless details make an app that's a pleasure to use, day in, night out."
+        },
+    ]
+}
 
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
-    tableContentHighFlyer, headTurnerData, tableContentHeadTurner
+    tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData
 };

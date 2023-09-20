@@ -1,0 +1,37 @@
+#powerCouple {
+    background-color: var(--white-back);
+    padding: 200px 0;
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .banner-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #dadee6;
+
+            img {
+                padding-top: 50px;
+                height: 100vh;
+                object-fit: contain;
+            }
+        }
+
+        .banner-desc {
+            padding: 10px 0;
+            font-size: 12px;
+            font-family: 'Apercu Mono Pro Regular';
+            color: #00000080; 
+            margin-bottom: 100px;
+        }
+    }
+
+    .table-container {
+        margin-bottom: 100px;
+    }
+}
