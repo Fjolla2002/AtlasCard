@@ -1,6 +1,7 @@
 .footer {
     padding: 50px 0;
     font-family: 'Apercu Mono Pro Regular'; 
+    color: #727272;
 
     .footer-top {
         display: flex;
@@ -36,4 +37,18 @@
             }
         }
     }
+
+    .footer-bottom {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        
+        p {
+            margin-top: 16px;
+        }
+    }
+
 }
