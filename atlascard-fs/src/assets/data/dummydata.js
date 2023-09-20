@@ -275,8 +275,114 @@ const tableContentExecutiveBrief = {
     ]
 }
 
+const footerTopData = {
+    categories: [
+        {
+            id: 1,
+            title: "ATLAS",
+            items: [
+                {
+                    id: 1,
+                    title: "DINING",
+                    path: "dining"
+                },
+                {
+                    id: 2,
+                    title: "TRAVEL",
+                    path: "travel"
+                },
+                {
+                    id: 3,
+                    title: "CARD",
+                    path: "card"
+                },
+                {
+                    id: 4,
+                    title: "APP",
+                    path: "app"
+                },
+                {
+                    id: 5,
+                    title: "CONCIERGE",
+                    path: "concierge"
+                },
+            ],
+        },
+        {
+            id: 2,
+            title: "BENEFITS",
+            items: [
+                {
+                    id: 1,
+                    title: "ATLAS BENEFITS",
+                    path: "benefits"
+                },
+                {
+                    id: 2,
+                    title: "VISA INFINTE",
+                    path: "visa"
+                },
+            ]
+        },
+        {
+            id: 3,
+            title: "CONTACT",
+            items: [
+                {
+                    id: 1,
+                    title: "EMAIL",
+                    path: ""
+                },
+                {
+                    id: 2,
+                    title: "TWITTER",
+                    path: "https://twitter.com/atlascardhq"
+                },
+                {
+                    id: 3,
+                    title: "INSTAGRAM",
+                    path: "https://www.instagram.com/atlascardhq/"
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "LEGAL",
+            items: [
+                {
+                    id: 1,
+                    title: "PRIVACY POLICY",
+                    path: ""
+                },
+                {
+                    id: 2,
+                    title: "TERMS OF USE",
+                    path: ""
+                },
+                {
+                    id: 3,
+                    title: "STATEMENT DISCLOSURE",
+                    path: ""
+                },
+            ]
+        },
+        {
+            id: 5,
+            title: "ABOUT",
+            items: [
+                {
+                    id: 1,
+                    title: "MEDIA KIT",
+                    path: ""
+                }
+            ]
+        },
+    ],
+}
+
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
     tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData,
-    trulyPersonalData, tableContentTrulyPersonal, executiveBriefData, tableContentExecutiveBrief
+    trulyPersonalData, tableContentTrulyPersonal, executiveBriefData, tableContentExecutiveBrief, footerTopData,
+
 };
