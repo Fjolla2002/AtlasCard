@@ -331,7 +331,7 @@ const footerTopData = {
                 {
                     id: 1,
                     title: "EMAIL",
-                    path: ""
+                    path: "mailto:hello@atlascard.com"
                 },
                 {
                     id: 2,
