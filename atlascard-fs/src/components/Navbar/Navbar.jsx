@@ -1,4 +1,4 @@
-import React , { useState } from 'react';
+import React , { useState, useEffect } from 'react';
 import './navbar.scss';
 import { footerTopData } from '../../assets/data/dummydata';
 import { NavLink } from 'react-router-dom';
@@ -7,7 +7,17 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [toggleBtn, setToggleBtn] = useState(false);
 
-    const datasToShow = window.innerWidth <= 768 ? '2': '3';
+    const [responsive, setResponsive] = useState(window.innerWidth <= 768);
+    const [datasToShow, setDatasToShow] = useState(responsive? '2': '3');
+
+    useEffect(() => {
+        const handleResize = () => {
+            setResponsive(window.innerWidth <= 768);
+            setDatasToShow(responsive? '2': '3');
+        };
+    
+        window.addEventListener('resize', handleResize);
+      }, [responsive]);
     
 
     const handleToogleMenu = () => {
@@ -50,7 +60,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='copyright'>
-                        <button className='btn' onClick={handleToogleMenu}>
+                        <button className='btn visible' onClick={handleToogleMenu}>
                             BECOME A FOUNDING MEMBER 
                             <span> &rarr;</span>
                         </button>

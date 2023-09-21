@@ -94,7 +94,7 @@
                     padding: 20px;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: flex-start;
                     justify-content: center;
                     
                     .span-text {
@@ -121,6 +121,10 @@
 
                     span {
                         padding-left: 20px ;
+                    }
+
+                    &.visible {
+                        display: none;
                     }
                 }
             }
@@ -158,8 +162,17 @@
                     }
 
                     .copyright {
+                        align-items: center;
                         .span-text {
                             display: none;
+                        }
+                    }
+
+                    .btn {
+                        display: none;
+
+                        &.visible {
+                            display: block;
                         }
                     }
                 }
