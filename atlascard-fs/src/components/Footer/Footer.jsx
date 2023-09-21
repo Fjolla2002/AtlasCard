@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className='footer-category' key={item.id}>
                             <span>{item.title}</span>
                             {item.items.map((el) => (
-                                <NavLink to={el.path}>{el.title}</NavLink>
+                                <NavLink to={el.path} key={el.id}>{el.title}</NavLink>
                             ))}
                         </div>
                     ))
