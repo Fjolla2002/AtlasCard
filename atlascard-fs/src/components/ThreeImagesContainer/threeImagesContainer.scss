@@ -35,8 +35,25 @@
             span {
                 padding: 10px 0;
                 font-size: 12px;
-                // color: #f7f7f2;
                 font-family: 'Apercu Mono Pro Regular'; 
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .images-content {
+        .single-image {
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .two-images {
+            .two-images-col {
+                span {
+                    font-size: 10px;
+                }
             }
         }
     }

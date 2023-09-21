@@ -23,3 +23,33 @@
       }
     }
 }          
+
+@media (max-width: 768px) {
+  .table-content {
+    .table-row {
+      .table-col {
+        padding: 80px 0;
+        font-size: 21px;
+  
+        &.col1 {
+          font-size: 16px;
+          letter-spacing: 2px;
+          padding-right: 200px;
+        }
+      }
+    }
+  }          
+}
+
+
+@media (max-width: 475px) {
+  .table-content {
+    .table-row {
+      .table-col {
+        &.col1 {
+          padding-right: 50px;
+        }
+      }
+    }
+  }          
+}

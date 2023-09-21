@@ -13,6 +13,12 @@ import powerCouple2 from '../images/powerCouple2.jpg';
 import powerCouple3 from '../images/powerCouple3.jpg';
 import trulyPersonal1 from '../images/trulyPersonal1.jpg';
 import trulyPersonal2 from '../images/trulyPersonal2.jpg';
+import tasteMakerRes1 from '../images/tasteMakerRes1.jpg';
+import tasteMakerRes2 from '../images/tasteMakerRes2.jpg';
+import tasteMakerRes3 from '../images/tasteMakerRes3.jpg';
+import powerCoupleRes1 from '../images/powerCoupleRes1.jpg';
+import powerCoupleRes2 from '../images/powerCoupleRes2.jpg';
+import powerCoupleRes3 from '../images/powerCoupleRes3.jpg';
 
 const homeBannerData = {
         title: "No Limits",
@@ -57,6 +63,11 @@ const tasteMakerData = {
         "FELIX TRATTORIA, LA, ON ATLAS SUPPER CLUB.",
         "CUCINA ALBA, NYC, ON ATLAS SUPPER CLUB.",
     ],
+    responsiveImages: [
+        tasteMakerRes1,
+        tasteMakerRes2,
+        tasteMakerRes3
+    ]
 }
 
 const highFlyerData = {
@@ -141,7 +152,13 @@ const powerCoupleData = {
         "YOUR PURCHASES, REIMAGINED AS MOMENTS.",
         "CREATE AND MANAGE VIRTUAL CARDS.",
         "POINTS UPGRADES, WITH DYNAMIC REWARDS."
+    ],
+    responsiveImages: [
+        powerCoupleRes1,
+        powerCoupleRes2,
+        powerCoupleRes3
     ]
+
 }
 
 const tableContentPowerCoupleData = {
