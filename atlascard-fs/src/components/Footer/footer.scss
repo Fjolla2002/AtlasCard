@@ -8,6 +8,10 @@
         justify-content: space-between;
         border-bottom: 1px solid #001391;
 
+        #logo-icon {
+            display: none;
+        }
+
         .icons {
             display: flex;
             flex-direction: column;
@@ -54,4 +58,44 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .footer {
+        overflow: hidden;
+
+        .footer-top {
+            flex-direction: column;
+
+            #logo-icon {
+                display: block;
+                margin-bottom: 30px;
+
+            }
+
+            .footer-category {
+                margin-bottom: 20px;
+            }
+
+            .icons {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+
+                .icon {
+                    display: none;
+                }
+            
+
+                .human-icon {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+
+                
+            }
+        }
+    }
 }
