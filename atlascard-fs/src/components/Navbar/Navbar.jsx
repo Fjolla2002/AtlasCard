@@ -23,6 +23,12 @@ const Navbar = () => {
     const handleToogleMenu = () => {
         setToggleBtn(!toggleBtn)
     }
+
+    const handleClick = () => {
+        const url = `${footerTopData.btnUrl}`;
+        window.open(url, '_blank');
+        handleToogleMenu();
+      }
   return (
     <div className='navbar'>
         <div className='navbar-container'>
@@ -49,7 +55,7 @@ const Navbar = () => {
                         ))
                     }
                     <div className='right-content'>
-                        <button className='btn' onClick={handleToogleMenu}>
+                        <button className='btn' onClick={handleClick}>
                             BECOME A FOUNDING MEMBER 
                             <span> &rarr;</span>
                         </button>
@@ -60,7 +66,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='copyright'>
-                        <button className='btn visible' onClick={handleToogleMenu}>
+                        <button className='btn visible' onClick={handleClick}>
                             BECOME A FOUNDING MEMBER 
                             <span> &rarr;</span>
                         </button>

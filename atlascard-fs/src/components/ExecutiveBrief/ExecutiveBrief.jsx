@@ -4,7 +4,11 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { executiveBriefData, tableContentExecutiveBrief } from '../../assets/data/dummydata';
 
 const ExecutiveBrief = () => {
-    const backColor = getComputedStyle(document.documentElement).getPropertyValue('--black-back').trim();
+    const backColor = getComputedStyle(document.documentElement).getPropertyValue('--black-back');
+    const handleClick = () => {
+        const url = `${executiveBriefData.member.btnUrl}`;
+        window.open(url, '_blank');
+      }
   return (
     <div id='executiveBrief'>
         <div className='container'>
@@ -30,7 +34,7 @@ const ExecutiveBrief = () => {
                 ))}
             </div>
             <div className='become-member'>
-                <button>{executiveBriefData.member.btnDesc}</button>
+                <button onClick={handleClick}>{executiveBriefData.member.btnDesc}</button>
                 <span>{executiveBriefData.member.price}</span>
             </div>
         </div>

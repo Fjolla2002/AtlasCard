@@ -84,7 +84,8 @@ const highFlyerData = {
         icon: "+",
         title: "Visa Infinite Benefits⁶",
         desc: "Priority Pass, Luxury Hotel Collection,no foreign transaction fees, and more.",
-        btnDesc: "Discover"
+        btnDesc: "Discover",
+        btnUrl : 'https://atlascard.com/visa-infinite'
     }
 }
 
@@ -223,6 +224,7 @@ const executiveBriefData = {
     desc: "With all the essentials you need out in the world, and nothing to limit your possibilities, here is everything Atlas has to offer.",
     member: {
         btnDesc: "Become a founding member",
+        btnUrl: "https://atlascard.com/request-invite",
         price: "$999/yr."
     }
 }
@@ -338,7 +340,7 @@ const footerTopData = {
                 {
                     id: 2,
                     title: "VISA INFINTE",
-                    path: "visa"
+                    path: "https://atlascard.com/visa-infinite"
                 },
             ]
         },
@@ -370,17 +372,17 @@ const footerTopData = {
                 {
                     id: 1,
                     title: "PRIVACY POLICY",
-                    path: ""
+                    path: "https://atlascard.com/legal/privacy"
                 },
                 {
                     id: 2,
                     title: "TERMS OF USE",
-                    path: ""
+                    path: "https://atlascard.com/legal/terms"
                 },
                 {
                     id: 3,
                     title: "STATEMENT DISCLOSURE",
-                    path: ""
+                    path: "https://atlascard.com/legal/statement-disclosure"
                 },
             ]
         },
@@ -396,6 +398,7 @@ const footerTopData = {
             ]
         },
     ],
+    btnUrl: "https://atlascard.com/request-invite",
 }
 
 const footerBottomData = {

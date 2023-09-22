@@ -7,6 +7,10 @@ import SingleImageContainer from '../SingleImageContainer/SingleImageContainer';
 
 const HighFlyer = () => {
   const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
+  const handleClick = () => {
+    const url = `${highFlyerData.visa.btnUrl}`;
+    window.open(url, '_blank');
+  }
   return (
     <div id='highFlyer'>
       <div className='container'>
@@ -24,7 +28,7 @@ const HighFlyer = () => {
           <span>{highFlyerData.visa.icon}</span>
           <h3>{highFlyerData.visa.title}</h3>
           <p>{highFlyerData.visa.desc}</p>
-          <button>{highFlyerData.visa.btnDesc}</button>
+          <button onClick={handleClick}>{highFlyerData.visa.btnDesc}</button>
         </div>
       </div>
     </div>
