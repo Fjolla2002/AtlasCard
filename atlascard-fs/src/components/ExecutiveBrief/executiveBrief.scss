@@ -10,7 +10,7 @@
         flex-wrap: wrap;
 
         .table-item {
-            flex: 0 0 calc(50%);
+            flex: 0 0 calc(48%);
             margin-bottom: 30px;
 
             &:nth-child(even) { 
@@ -72,6 +72,38 @@
         span {
             font-size: 18px;
             color: #ffffff8f;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #executiveBrief {
+        overflow: hidden;
+        .table-content {
+            .table-item {
+
+                &:nth-child(even) { 
+                    table {
+                        margin-left: 20px; 
+                    }
+                }
+                table {
+                    tbody {
+                
+                        tr:first-child {
+                            td {
+                                font-size: 18px;
+                                
+                            }
+                        }
+                        tr:nth-child(n + 2) {
+                            td {
+                                font-size: 12px; 
+                                padding-right: 0px; 
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
