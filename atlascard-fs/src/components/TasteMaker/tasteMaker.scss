@@ -35,10 +35,8 @@
 
 @media (max-width: 480px) {
     #tasteMaker {
+        overflow: hidden;
         .horse-image-content {
-            img {
-                width: 100%;
-            }
             span {
                 opacity: 1;
                 text-align: center;
@@ -46,6 +44,17 @@
                 font-size: 10px;
                 font-family: 'Apercu Mono Pro Regular'; 
                 padding: 10px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #tasteMaker {
+        overflow: hidden;
+        .horse-image-content {
+            img {
+                width: 100%;
             }
         }
     }

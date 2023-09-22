@@ -19,6 +19,9 @@ import tasteMakerRes3 from '../images/tasteMakerRes3.jpg';
 import powerCoupleRes1 from '../images/powerCoupleRes1.jpg';
 import powerCoupleRes2 from '../images/powerCoupleRes2.jpg';
 import powerCoupleRes3 from '../images/powerCoupleRes3.jpg';
+import highFlyerResponsive from '../images/highFlyerResponsive.webp';
+import powerCoupleResponsive from '../images/powerCoupleResponsive.webp';
+import trulyPersonalResponsive from '../images/trulyPersonalResponsive.jpg';
 
 const homeBannerData = {
         title: "No Limits",
@@ -76,6 +79,7 @@ const highFlyerData = {
     desc: "No matter where your next grand tour takes you, Atlas is there as your co-pilot, with bespoke flight benefits for when you're ready to go on the spur of the moment.",
     image: highFlyerImage,
     imageDesc: "BESPOKE FLIGHT BENEFITS, INSIDE ATLAS APP.",
+    responsiveImage: highFlyerResponsive,
     visa: {
         icon: "+",
         title: "Visa Infinite Benefits⁶",
@@ -141,8 +145,9 @@ const powerCoupleData = {
     title: "Power Couple",
     subTitle: "A dynamic duo of card + app.",
     desc: "Each conceived from the same first principles, Atlas shines with a true native app that raises the bar, from magical rewards to unlimited cards, and everything in between.",
-    bannerImg: powerCoupleImg,
-    bannerImgDesc: "FAR ABOVE THE TYPICAL APP EXPERIENCE.",
+    image: powerCoupleImg,
+    imageDesc: "FAR ABOVE THE TYPICAL APP EXPERIENCE.",
+    responsiveImage: powerCoupleResponsive,
     images: [
         powerCouple1,
         powerCouple2,
@@ -185,15 +190,11 @@ const trulyPersonalData = {
     title: "Truly Personal",
     subTitle: "At your beck and call (or text).",
     desc: "Experience handcrafted support, with your own dedicated personal advisor who is on hand to fulfill any request, from last-minute dinner plans to deep dive sessions.",
-    images: [
-        trulyPersonal1,
-        trulyPersonal2
-    ],
-    imagesDesc: [
-        "YOUR PERSONAL ADVISOR, NOW IN IMESSAGE.",
-        "YOUR COMPANION THROUGH EVERY ADVENTURE."
-    ]
-
+    image: trulyPersonal1,
+    imageDesc: "YOUR PERSONAL ADVISOR, NOW IN IMESSAGE.",
+    responsiveImage: trulyPersonalResponsive,
+    cardImage: trulyPersonal2,
+    cardImageDesc: "YOUR COMPANION THROUGH EVERY ADVENTURE.",
 }
 
 const tableContentTrulyPersonal = {

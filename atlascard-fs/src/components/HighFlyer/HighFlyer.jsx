@@ -3,10 +3,10 @@ import { highFlyerData, tableContentHighFlyer } from '../../assets/data/dummydat
 import './highFlyer.scss'
 import SectionTitle from '../SectionTitle/SectionTitle';
 import TableContent from '../TableContent/TableContent';
+import SingleImageContainer from '../SingleImageContainer/SingleImageContainer';
 
 const HighFlyer = () => {
   const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
-  // console.log(backColor);
   return (
     <div id='highFlyer'>
       <div className='container'>
@@ -15,16 +15,7 @@ const HighFlyer = () => {
           backgroundColor={backColor}
         />
       </div>
-      <div className='banner-image'>
-        <div className='container'>
-          <div className='image-container'>
-              <img src={highFlyerData.image} alt={highFlyerData.imageDesc} />
-          </div>
-        </div>
-        <div className='text-container'>
-            <span>{highFlyerData.imageDesc}</span>
-        </div>
-      </div>
+      <SingleImageContainer data={highFlyerData}/>
       <div className='container'>
         <div className='table-container'>
              <TableContent data={tableContentHighFlyer.rows} backgroundColor={backColor}/>
