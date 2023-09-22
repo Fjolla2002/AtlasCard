@@ -6,7 +6,6 @@
 #tasteMaker {
     display: flex;
     flex-direction: column;
-    background-color: var(--black-back);
     padding: 250px 0;
 
     .horse-image-content {
@@ -17,9 +16,10 @@
         margin-bottom: 150px;
 
         img {
-            width: 500px;
+            width: 50%;
             height: auto;
             object-fit: contain;
+            border-radius: 20px;
         }
 
         span {
@@ -31,5 +31,20 @@
         margin-bottom: 100px;
       
     } 
+}
+
+@media (max-width: 480px) {
+    #tasteMaker {
+        .horse-image-content {
+            img {
+                width: 100%;
+            }
+            span {
+                opacity: 1;
+                text-align: center;
+                color: #00000080;
+            }
+        }
+    }
 }
   

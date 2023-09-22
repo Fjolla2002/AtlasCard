@@ -141,6 +141,8 @@
             width: 90%;
 
             .navbar-content {
+                max-height: 100vh;
+                overflow-y: scroll;
 
                 .bottom-container {
 
