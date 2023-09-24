@@ -1,16 +1,13 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './executiveBrief.scss';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { executiveBriefData, tableContentExecutiveBrief } from '../../assets/data/dummydata';
 
 const ExecutiveBrief = () => {
     const backColor = getComputedStyle(document.documentElement).getPropertyValue('--black-back');
-    const handleClick = () => {
-        const url = `${executiveBriefData.member.btnUrl}`;
-        window.open(url, '_blank');
-      }
   return (
-    <div id='executiveBrief'>
+    <div id='executiveBrief' style={{backgroundColor: backColor}}>
         <div className='container'>
             <SectionTitle data={executiveBriefData} backgroundColor={backColor}/>
             <div className='table-content'>
@@ -34,7 +31,7 @@ const ExecutiveBrief = () => {
                 ))}
             </div>
             <div className='become-member'>
-                <button onClick={handleClick}>{executiveBriefData.member.btnDesc}</button>
+                <NavLink to={executiveBriefData.member.btnUrl}><button>{executiveBriefData.member.btnDesc}</button></NavLink>
                 <span>{executiveBriefData.member.price}</span>
             </div>
         </div>

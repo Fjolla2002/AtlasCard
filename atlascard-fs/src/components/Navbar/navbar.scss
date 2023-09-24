@@ -151,8 +151,10 @@
                         .right-content {
                             position: relative;
                             
-                            .btn {
-                                display: none;
+                            a {
+                                .btn {
+                                    display: none;
+                                }
                             }
 
                             .human-icon {
@@ -170,11 +172,14 @@
                         }
                     }
 
-                    .btn {
-                        display: none;
-
-                        &.visible {
-                            display: block;
+                    a {
+                        text-decoration: none;
+                        .btn {
+                            display: none;
+    
+                            &.visible {
+                                display: block;
+                            }
                         }
                     }
                 }

@@ -7,7 +7,7 @@ import TableContent from '../TableContent/TableContent';
 const HeadTurner = () => {
     const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
   return (
-    <div id='headTurner'>
+    <div id='headTurner' style={{backgroundColor: backColor}}>
         <div className='container'>
             <div className='card-item'>
                 <video autoPlay muted> 

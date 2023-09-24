@@ -22,6 +22,7 @@ import powerCoupleRes3 from '../images/powerCoupleRes3.jpg';
 import highFlyerResponsive from '../images/highFlyerResponsive.webp';
 import powerCoupleResponsive from '../images/powerCoupleResponsive.webp';
 import trulyPersonalResponsive from '../images/trulyPersonalResponsive.jpg';
+import mediaKit from '../files/atlas_media_kit.zip';
 
 const homeBannerData = {
         title: "No Limits",
@@ -393,7 +394,7 @@ const footerTopData = {
                 {
                     id: 1,
                     title: "MEDIA KIT",
-                    path: ""
+                    path: mediaKit,
                 }
             ]
         },

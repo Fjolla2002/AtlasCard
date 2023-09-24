@@ -8,7 +8,7 @@ import SingleImageContainer from '../SingleImageContainer/SingleImageContainer';
 const TrulyPersonal = () => {
     const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
   return (
-    <div id='trulyPersonal'>
+    <div id='trulyPersonal' style={{backgroundColor:backColor}}>
         <div className='container'>
             <SectionTitle 
             data={trulyPersonalData}  

@@ -1,5 +1,4 @@
 #highFlyer {
-    background-color: var(--white-back);
     padding: 200px 0 100px 0;
 
     .banner-content {
@@ -37,14 +36,16 @@
             margin-bottom: 48px;
         }
 
-        button {
-            background-color: transparent;
-            border: 2px solid #00000080;
-            padding: 10px 20px;
-            border-radius: 100px;
-            font-size: 20px;
-            color: #000;
-            font-weight: 500;
+        a { 
+            button {
+                background-color: transparent;
+                border: 2px solid #00000080;
+                padding: 10px 20px;
+                border-radius: 100px;
+                font-size: 20px;
+                color: #000;
+                font-weight: 500;
+            }
         }
         
     }
@@ -80,9 +81,12 @@
                 width: 100%;
             }
 
-            button {
-                padding: 10px 12px;
-                font-size: 15px;
+            a {
+                text-decoration: none;
+                button {
+                    padding: 10px 12px;
+                    font-size: 15px;
+                }
             }
         }
     }

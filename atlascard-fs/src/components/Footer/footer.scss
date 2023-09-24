@@ -32,14 +32,16 @@
                 margin: 8px 0;
             }
 
-            a {
-                font-size: 12px;
-                color: #001391;
-                margin: 8px 0;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
+            .category {
+                a {
+                    font-size: 12px;
+                    color: #001391;
+                    margin: 8px 0;
+                    text-decoration: none;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

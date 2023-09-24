@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import { highFlyerData, tableContentHighFlyer } from '../../assets/data/dummydata';
 import './highFlyer.scss'
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -7,12 +8,8 @@ import SingleImageContainer from '../SingleImageContainer/SingleImageContainer';
 
 const HighFlyer = () => {
   const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
-  const handleClick = () => {
-    const url = `${highFlyerData.visa.btnUrl}`;
-    window.open(url, '_blank');
-  }
   return (
-    <div id='highFlyer'>
+    <div id='highFlyer' style={{backgroundColor:backColor}}>
       <div className='container'>
         <SectionTitle 
           data={highFlyerData}  
@@ -28,7 +25,9 @@ const HighFlyer = () => {
           <span>{highFlyerData.visa.icon}</span>
           <h3>{highFlyerData.visa.title}</h3>
           <p>{highFlyerData.visa.desc}</p>
-          <button onClick={handleClick}>{highFlyerData.visa.btnDesc}</button>
+          <NavLink to={highFlyerData.visa.btnUrl}>
+            <button>{highFlyerData.visa.btnDesc}</button>
+          </NavLink>
         </div>
       </div>
     </div>

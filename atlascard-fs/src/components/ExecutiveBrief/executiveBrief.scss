@@ -1,5 +1,4 @@
 #executiveBrief {
-    background-color: var(--black-back);
     padding: 170px 0;
 
     .table-content {
@@ -98,6 +97,31 @@
                         tr:nth-child(n + 2) {
                             td {
                                 font-size: 12px; 
+                                padding-right: 0px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    #executiveBrief {
+        overflow: hidden;
+        .table-content {
+            .table-item {
+
+                &:nth-child(even) { 
+                    table {
+                        margin-left: 40px; 
+                    }
+                }
+                table {
+                    tbody {
+                        tr:nth-child(n + 2) {
+                            td {
                                 padding-right: 0px; 
                             }
                         }

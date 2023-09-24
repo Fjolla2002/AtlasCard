@@ -9,7 +9,7 @@ import SingleImageContainer from '../SingleImageContainer/SingleImageContainer';
 const PowerCouple = () => {
     const backColor = getComputedStyle(document.documentElement).getPropertyValue('--white-back');
   return (
-    <div id='powerCouple'>
+    <div id='powerCouple' style={{backgroundColor: backColor}}>
         <div className='container'>
             <SectionTitle 
                 data={powerCoupleData}

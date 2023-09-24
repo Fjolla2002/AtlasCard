@@ -14,16 +14,26 @@ const Footer = () => {
                 <path d="M132.505 179.106H166.108C211.766 179.106 248.93 142.737 250.21 97.3887H166.312C154.478 97.3887 148.561 97.3887 144.041 99.6917C140.066 101.717 136.833 104.95 134.808 108.926C132.505 113.445 132.505 119.362 132.505 131.196V179.106Z" fill="currentColor"></path>
                 <path d="M250.214 82.6236C249 37.2157 211.809 0.778687 166.108 0.778687H132.505V48.8164C132.505 60.65 132.505 66.5668 134.808 71.0867C136.834 75.0624 140.066 78.2948 144.042 80.3206C148.562 82.6236 154.478 82.6236 166.312 82.6236H250.214Z" fill="currentColor"></path>
             </svg>
-                {
-                    footerTopData.categories.map((item) => (
-                        <div className='footer-category' key={item.id}>
-                            <span>{item.title}</span>
-                            {item.items.map((el) => (
-                                <NavLink to={el.path} key={el.id}>{el.title}</NavLink>
-                            ))}
-                        </div>
-                    ))
-                }
+                {footerTopData.categories.map((category) => (
+                    <div className="footer-category" key={category.id}>
+                        <span>{category.title}</span>
+                        {category.items.map((item) => (
+                            <div className='category' key={item.id}>
+                                {item.title === "MEDIA KIT" ? (
+                                    <a 
+                                        href={footerTopData.categories[4].items[0].path} download="atlas_media_kit.zip"
+                                    >
+                                     {item.title}
+                                    </a>
+                                ) : (
+                                    <NavLink to={item.path} key={item.id}>
+                                        {item.title}
+                                    </NavLink>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                ))}
                 <div className='icons'>
                 <svg className='icon' height="31" width="134" data-astro-cid-lejjx2fa="" fill="none" viewBox="0 0 774 180" xmlns="http://www.w3.org/2000/svg" color='#001391'>
                         <path d="M444.769 175.185L378.566 4.53904H342.955L276.752 175.185H307.105L323.357 130.492H397.686L414.177 175.185H444.769ZM360.163 29.634H361.119L389.321 107.309H331.722L360.163 29.634Z" fill="currentColor"></path>
