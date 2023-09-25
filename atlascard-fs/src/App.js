@@ -9,6 +9,7 @@ import ConciergePage from './pages/ConciergePage';
 import BenefitsPage from './pages/BenefitsPage';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
+import UsersPage from './pages/UsersPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/app' element={<AppPage/>}/>
           <Route path='/concierge' element={<ConciergePage/>}/>
           <Route path='/benefits' element={<BenefitsPage/>}/>
+          <Route path='/profile' element={<UsersPage/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

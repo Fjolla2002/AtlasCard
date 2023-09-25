@@ -23,6 +23,7 @@ import highFlyerResponsive from '../images/highFlyerResponsive.webp';
 import powerCoupleResponsive from '../images/powerCoupleResponsive.webp';
 import trulyPersonalResponsive from '../images/trulyPersonalResponsive.jpg';
 import mediaKit from '../files/atlas_media_kit.zip';
+import twitterLogo from '../images/twitter.png'
 
 const homeBannerData = {
         title: "No Limits",
@@ -327,6 +328,11 @@ const footerTopData = {
                     title: "CONCIERGE",
                     path: "concierge"
                 },
+                {
+                    id: 6,
+                    title: "CLIENTS",
+                    path: "profile"
+                },
             ],
         },
         {
@@ -465,9 +471,16 @@ const footerBottomData = {
     footerDesc: 'ATLAS EXPLORATION, INC IS A TECHNOLOGY COMPANY, NOT A BANK. ATLAS CARD IS ISSUED BY LEAD BANK ("ISSUER"). AN APPLICATION IS REQUIRED. CARDHOLDERS MUST BE AT LEAST 18 YEARS OLD AND A CITIZEN OF THE UNITED STATES, OR A PERMANENT RESIDENT WITH A VALID SOCIAL SECURITY NUMBER (SSN) OR ITIN. FINANCING IS SUBJECT TO ISSUERS APPROVAL. PAYMENT OF ACCOUNT BALANCE DUE IN FULL MONTHLY. FEES MAY BE ASSESSED ON OVERDUE AMOUNTS. AN ANNUAL MEMBERSHIP FEE APPLIES.'
 }
 
+const usersData = {
+    title: "Our Clients",
+    subTitle: "Meet Our Valued Clients",
+    desc: "Discover our esteemed client base and the partnerships that drive our success.",
+    twitterImg : twitterLogo,
+}
+
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
     tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData,
     trulyPersonalData, tableContentTrulyPersonal, executiveBriefData, tableContentExecutiveBrief, footerTopData,
-    footerBottomData
+    footerBottomData, usersData
 };
