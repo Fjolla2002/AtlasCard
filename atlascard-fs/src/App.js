@@ -10,6 +10,7 @@ import BenefitsPage from './pages/BenefitsPage';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import UsersPage from './pages/UsersPage';
+import SingleUserPage from './pages/SinlgeUserPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/concierge' element={<ConciergePage/>}/>
           <Route path='/benefits' element={<BenefitsPage/>}/>
           <Route path='/profile' element={<UsersPage/>}/>
+          <Route path='/profile/:id' element={<SingleUserPage/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

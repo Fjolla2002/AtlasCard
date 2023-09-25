@@ -46,70 +46,82 @@
             grid-auto-columns: calc((100% / 3) - 12px);
             gap: 16px;
             overflow: hidden;
+            a {
+                text-decoration: none; 
+                padding: 50px 0;
+                transition: all 0.5s ease-in-out;
 
-            .single-user {
-                padding: 30px;
-                border-radius: 10px;
-                background-color: #ddd5d5;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                &:hover {
+                    transform: translateY(-20px);
 
-                .user-image {
-                    img {
-                        width: 150px;
-                        height: 150px;
-                        border-radius: 50%;
-                        object-fit: contain;
-                        border: 3px solid #000;
-                    }
                 }
 
-                .user-info {
+                .single-user {
+                    padding: 30px;
+                    border-radius: 10px;
+                    background-color: #ddd5d5;
                     display: flex;
                     flex-direction: column;
-                    
-                    h2 {
-                        text-align: center;
-                        font-size: 24px;
-                        margin: 10px 0;
-                        color: #000;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100%;
+    
+                    .user-image {
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            object-fit: contain;
+                            border: 3px solid #000;
+                        }
                     }
-
-                    p {
-                        padding: 10px;
-                        text-align: center;
-                        font-style: italic;
-                        color: #0e0d0d80;
-                    }
-
-                    .contact-info {
+    
+                    .user-info {
                         display: flex;
                         flex-direction: column;
-
-                        .user-contact {
+                        
+                        h2 {
+                            text-align: center;
+                            font-size: 24px;
+                            margin: 10px 0;
+                            color: #000;
+                        }
+    
+                        p {
+                            padding: 10px;
+                            text-align: center;
+                            font-style: italic;
+                            color: #0e0d0d80;
+                        }
+    
+                        .contact-info {
                             display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: flex-start;
-                            padding: 0 5px;
-                            font-size: 16px;
-
-                            span {
-                                margin-left: 10px;
-                                padding: 5px 0;
-
-                                img {
-                                    width: 25px;
-                                    height: 25px;
-                                    object-fit: contain;
+                            flex-direction: column;
+                            color: #000;
+    
+                            .user-contact {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: flex-start;
+                                padding: 0 5px;
+                                font-size: 16px;
+    
+                                span {
+                                    margin-left: 10px;
+                                    padding: 5px 0;
+    
+                                    img {
+                                        width: 25px;
+                                        height: 25px;
+                                        object-fit: contain;
+                                    }
                                 }
                             }
                         }
                     }
+    
                 }
-
             }
         }
     }

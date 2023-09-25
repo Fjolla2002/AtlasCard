@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react';
+import {NavLink} from 'react-router-dom';
 import './users.scss';
 import axios from 'axios';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -60,33 +61,31 @@ const Users = () => {
             <span className='left-arrow' onClick={() => swipeLeft()}>&#8249;</span>
             <div className='all-users'>
                 {users?.slice(0,25).map((user) => (
-                    <div className='single-user' key={user.id}>
-                        <div className='user-image'>
-                         <img src={user.avatar} alt={user.fullName} />
-                        </div>
-                        <div className='user-info'>
-                            <h2>{user.fullName}</h2>
-                            <p>{user.bio}</p>
-                            <div className='contact-info'>
-                                <div className='user-contact'>
-                                    <span>&#9993;</span>
-                                    <span>{user.email}</span>
-                                </div>
-                                <div className='user-contact'>
-                                    <span>&#128241;</span>
-                                    <span>{user.phone}</span>
-                                </div>
-                                <div className='user-contact'>
-                                    <span><img src={usersData.twitterImg} alt={user.name} /></span>
-                                    <span>{user.twitterHandle}</span>
+                    <NavLink to={`/profile/${user.id}`} key={user.id}>
+                        <div className='single-user'>
+                            <div className='user-image'>
+                                <img src={user.avatar} alt={user.fullName} />
+                            </div>
+                            <div className='user-info'>
+                                <h2>{user.fullName}</h2>
+                                <p>{user.bio}</p>
+                                <div className='contact-info'>
+                                    <div className='user-contact'>
+                                        <span>&#9993;</span>
+                                        <span>{user.email}</span>
+                                    </div>
+                                    <div className='user-contact'>
+                                        <span>&#128241;</span>
+                                        <span>{user.phone}</span>
+                                    </div>
+                                    <div className='user-contact'>
+                                        <span><img src={usersData.twitterImg} alt={user.name} /></span>
+                                        <span>{user.twitterHandle}</span>
+                                    </div>
                                 </div>
                             </div>
-                            {/* <div className='twitter-info'>
-                                <img src={usersData.twitterImg} alt={user.name} />
-                                <span>{user.twitterHandle}</span>
-                            </div> */}
                         </div>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
             <span className='right-arrow' onClick={() => swipeRight()}>&#8250;</span>
