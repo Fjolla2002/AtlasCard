@@ -10,23 +10,37 @@ const Navbar = () => {
     const [responsive, setResponsive] = useState(window.innerWidth <= 768);
     const [datasToShow, setDatasToShow] = useState(responsive? '2': '3');
 
+    const [widthOfNav, setWidthOfNav] = useState('67%');
+
     useEffect(() => {
         const handleResize = () => {
-            setResponsive(window.innerWidth <= 768);
-            setDatasToShow(responsive? '2': '3');
+            const isResponsive = window.innerWidth <= 768;
+            setResponsive(isResponsive);
+            setDatasToShow(isResponsive? '2': '3');
+            setWidthOfNav(isResponsive? '90%': '67%')
         };
     
         window.addEventListener('resize', handleResize);
       }, [responsive]);
+
     
+      const handleWidth = () => {
+        if(window.innerWidth <= 768){
+            setWidthOfNav((isWidth) => (isWidth === '90%'? '90.5%': '90%'))
+        }
+        else {
+            setWidthOfNav((isWidth)=> (isWidth === '67%'? '67.5%': '67%'));
+        }
+      }
 
     const handleToogleMenu = () => {
-        setToggleBtn(!toggleBtn)
+        setToggleBtn(!toggleBtn);
+        handleWidth();
     }
 
   return (
     <div className='navbar'>
-        <div className='navbar-container'>
+        <div className='navbar-container' style={{width:widthOfNav}}>
         <div className='navbar-content'>
             <div className='top-content' onClick={handleToogleMenu} >
                 <svg fill="none" height="24" viewBox="0 0 251 180" width="34" xmlns="http://www.w3.org/2000/svg">

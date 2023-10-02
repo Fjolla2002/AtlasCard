@@ -8,8 +8,9 @@
     font-family: 'Apercu Mono Pro Regular'; 
 
     .navbar-container {
-        width: 67%;
+        // width: 67%;
         margin: 0 auto;
+        transition: width 0.3s ease-in-out;
 
         .navbar-content {
             background-color: #f0f0f052;
@@ -24,11 +25,12 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px;
+                cursor: pointer;
     
                 .plus-icon {
                     color: #a3a3a3;
                     transform: rotate(0deg);
-                    transition: all 0.3s ease;
+                    transition: transform 0.3s ease-in-out;
 
                     &.rotate {
                         transform: rotate(-45deg);
@@ -39,8 +41,8 @@
             .bottom-container {
                 width: 100%;
                 display: none;
-                transition: display 0.9s ease-in-out;
-
+                transition: display 0.3s ease-in-out;
+                
                 &.visible {
                     display: flex;
                     flex-direction: column;
@@ -111,6 +113,7 @@
                     font-size: 14px;
                     color: #141414;
                     font-weight: 500;
+                    cursor: pointer;
 
                     &:hover {
                         border: 2px solid #001391;

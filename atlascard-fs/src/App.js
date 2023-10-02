@@ -11,10 +11,12 @@ import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
 import UsersPage from './pages/UsersPage';
 import SingleUserPage from './pages/SinlgeUserPage';
+import GoToTop from './components/GoToTop/GoToTop';
 
 function App() {
   return (
     <BrowserRouter>
+    <GoToTop/>
     <Navbar />
       <Routes>
           <Route path='/' element={<HomePage/>}/>

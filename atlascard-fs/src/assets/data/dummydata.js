@@ -4,7 +4,7 @@ import tasteMaker2 from '../images/tastemaker2.jpg';
 import tasteMaker3 from '../images/tastemaker3.jpg';
 import tasteMaker4 from '../images/tastemaker4.jpg';
 import highFlyerImage from '../images/travel-desktop.webp';
-import headTurnerVideo from '../videos/atlas-woman.mp4';
+import headTurnerVideo from '../videos/atlas-woman.gif';
 import headTurner1 from '../images/headTurner1.png';
 import headTurner2 from '../images/headTurner2.png';
 import powerCoupleImg from '../images/phone-in-hand-desktop.webp';

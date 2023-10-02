@@ -10,9 +10,7 @@ const HeadTurner = () => {
     <div id='headTurner' style={{backgroundColor: backColor}}>
         <div className='container'>
             <div className='card-item'>
-                <video autoPlay muted> 
-                    <source src={headTurnerData.video} type='video/mp4'/>
-                </video>
+                <img src={headTurnerData.video} alt="" />
                 <span>{headTurnerData.videoDesc}</span>
             </div>
             <SectionTitle data={headTurnerData} backgroundColor={backColor}/>
