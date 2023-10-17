@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './footer.scss';
 import { footerBottomData, footerTopData } from '../../assets/data/dummydata';
 import {NavLink} from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+      
+  useEffect(() => {
+    AOS.init({duration:2000});
+  },[])
+
   return (
     <div className='footer'>
         <div className="container">
             <div className='footer-top'>
-            <svg id='logo-icon' color='#001391' fill="none" height="14" viewBox="0 0 251 180" width="20" xmlns="http://www.w3.org/2000/svg" className="text-reflexBlue" data-astro-cid-lejjx2fa="true">
+            <svg data-aos='fade-up' id='logo-icon' color='#001391' fill="none" height="14" viewBox="0 0 251 180" width="20" xmlns="http://www.w3.org/2000/svg" className="text-reflexBlue" data-astro-cid-lejjx2fa="true">
                 <path d="M117.732 179.106H84.1283C38.4701 179.106 1.30636 142.737 0.0263672 97.3887H83.9246C95.7583 97.3887 101.675 97.3887 106.195 99.6917C110.171 101.717 113.403 104.95 115.429 108.926C117.732 113.445 117.732 119.362 117.732 131.196V179.106Z" fill="currentColor"></path>
                 <path d="M0.0224609 82.6236C1.23644 37.2157 38.427 0.778687 84.1279 0.778687H117.731V48.8164C117.731 60.65 117.731 66.5668 115.428 71.0867C113.403 75.0624 110.17 78.2948 106.194 80.3206C101.675 82.6236 95.7578 82.6236 83.9242 82.6236H0.0224609Z" fill="currentColor"></path>
                 <path d="M132.505 179.106H166.108C211.766 179.106 248.93 142.737 250.21 97.3887H166.312C154.478 97.3887 148.561 97.3887 144.041 99.6917C140.066 101.717 136.833 104.95 134.808 108.926C132.505 113.445 132.505 119.362 132.505 131.196V179.106Z" fill="currentColor"></path>
@@ -16,9 +23,9 @@ const Footer = () => {
             </svg>
                 {footerTopData.categories.map((category) => (
                     <div className="footer-category" key={category.id}>
-                        <span>{category.title}</span>
+                        <span data-aos='fade-up'>{category.title}</span>
                         {category.items.map((item) => (
-                            <div className='category' key={item.id}>
+                            <div className='category' key={item.id} data-aos='fade-up'>
                                 {item.title === "MEDIA KIT" ? (
                                     <a 
                                         href={footerTopData.categories[4].items[0].path} download="atlas_media_kit.zip"
@@ -54,13 +61,13 @@ const Footer = () => {
             <div className='footer-bottom'>
                 <ol>
                 {footerBottomData.items.map((item) => (
-                    <li key={item.id}>{item.desc}</li>
+                    <li key={item.id} data-aos='fade-up'>{item.desc}</li>
                 ))}
                 </ol>
             </div>
             <div className='copyright'>
-                <span>{footerBottomData.copyright}</span>
-                <p>{footerBottomData.footerDesc}</p>
+                <span data-aos='fade-up'>{footerBottomData.copyright}</span>
+                <p data-aos='fade-up'>{footerBottomData.footerDesc}</p>
             </div>
         </div>
     </div>

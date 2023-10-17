@@ -3,7 +3,6 @@ import './navbar.scss';
 import { footerTopData } from '../../assets/data/dummydata';
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
     const [toggleBtn, setToggleBtn] = useState(false);
 

@@ -4,6 +4,8 @@ import './tasteMaker.scss';
 import TableContent from '../TableContent/TableContent';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import ThreeImagesContainer from '../ThreeImagesContainer/ThreeImagesContainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TasteMaker = () => {
   const normalBackColor = getComputedStyle(document.documentElement).getPropertyValue('--black-back');
@@ -11,6 +13,11 @@ const TasteMaker = () => {
 
   const [responsive, setResponsive] = useState(window.innerWidth <= 480);
   const [backColor, setBackColor] = useState(responsive ? responsiveBackColor : normalBackColor);
+
+   
+  useEffect(() => {
+    AOS.init({duration:2000});
+  },[])
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,13 +37,13 @@ const TasteMaker = () => {
                 backgroundColor={backColor} 
             />
             <div className='horse-image-content'>
-                <img src={tasteMakerData.bannerImg} alt={tasteMakerData.bannerImgDesc} />
-                <span>{tasteMakerData.bannerImgDesc}</span>
+                <img data-aos='fade-up' src={tasteMakerData.bannerImg} alt={tasteMakerData.bannerImgDesc} />
+                <span data-aos='fade-up'>{tasteMakerData.bannerImgDesc}</span>
             </div>
             <div className='table-container'>
              <TableContent data={tableContentTasteMaker.rows} backgroundColor={backColor}/>
             </div>
-            <ThreeImagesContainer  data={tasteMakerData} backgroundColor={backColor}/>
+            <ThreeImagesContainer data={tasteMakerData} backgroundColor={backColor}/>
         </div>
     </div>
   );

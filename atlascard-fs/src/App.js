@@ -12,6 +12,7 @@ import Navbar from './components/Navbar/Navbar';
 import UsersPage from './pages/UsersPage';
 import SingleUserPage from './pages/SinlgeUserPage';
 import GoToTop from './components/GoToTop/GoToTop';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/benefits' element={<BenefitsPage/>}/>
           <Route path='/profile' element={<UsersPage/>}/>
           <Route path='/profile/:id' element={<SingleUserPage/>}/>
+          <Route path='*' element={<ErrorPage/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

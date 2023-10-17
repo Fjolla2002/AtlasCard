@@ -478,9 +478,16 @@ const usersData = {
     twitterImg : twitterLogo,
 }
 
+const errorData = { 
+    title: "Error 404",
+    subTitle: "Page not found",
+    desc: "Sorry, the page you are looking for couldn't be found.",
+    btnText: "Back to HomePage"
+}
+
 export {
     homeBannerData, tableContentTasteMaker, tasteMakerData, highFlyerData, 
     tableContentHighFlyer, headTurnerData, tableContentHeadTurner, powerCoupleData, tableContentPowerCoupleData,
     trulyPersonalData, tableContentTrulyPersonal, executiveBriefData, tableContentExecutiveBrief, footerTopData,
-    footerBottomData, usersData
+    footerBottomData, usersData, errorData
 };
